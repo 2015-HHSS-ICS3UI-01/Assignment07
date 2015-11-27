@@ -40,12 +40,15 @@ public class A7Q1 {
         
         // count the number of variables to store a certain number of marks
         for(int index = 0; index < numberOfStudents; index = index + 1){
+            // store the numbers
             aryMarks[index] = input.nextDouble();
-            average = average + aryMarks[index];
+            
+            // add the mark to the average
+            average = Math.round((average + aryMarks[index]) * 100) / 100;
         }
         
+        // calculate the average and output
         average = average / numberOfStudents;
-        
-        System.out.println("The average of the class is " + average + ".");
+        System.out.println("The average of the class is " + average + "%");
     }
 }
