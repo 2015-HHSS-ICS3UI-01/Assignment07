@@ -28,9 +28,10 @@ public class A7Q1 {
         for(int i = 0; i<num; i++){
             avg = avg + marks[i];
         }
-        avg = (avg / num)*100;
-        int avg1 = (int) (avg);
-        double avg2 = avg1/100;
-        System.out.println("The average is " + avg2 + "%.");
+        avg = avg * 100;
+        avg = avg / num;
+        avg = (int) (avg);
+        avg = avg / 100;
+        System.out.println("The average is " + avg + "%.");
     }
 }
