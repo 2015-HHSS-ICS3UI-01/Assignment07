@@ -15,13 +15,17 @@ public class A7Q1 {
     
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        
+        double answer = 0;
+        System.out.println("Please input the amount of marks.");
         int students = input.nextInt();
         int[] marks = new int [students];
+        System.out.println("Enter a mark for each student.");
         for (int e = students -1; e > -1; e--){
             marks[e] = input.nextInt();
+            answer = answer + marks[e];
         
         }
-        System.out.println(marks[2] + marks[1] + marks[0]);
+        answer = answer/students;
+        System.out.println("The average marks of the students is " + answer);
     }
 }
