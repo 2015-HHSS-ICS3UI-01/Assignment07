@@ -28,10 +28,8 @@ public class A7Q2 {
         int numberOfPeople = input.nextInt();
         
         // create an array to store the heights of a group of people
-        double[] aryHeights;
-        
         // the number of variables stored is the number of people in the group
-        aryHeights = new double[numberOfPeople];
+        double[] aryHeights = new double[numberOfPeople];
         
         // create a variable to store the average
         double average = 0;

@@ -19,13 +19,12 @@ public class A7Q3 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        int[] aryA;
-        aryA = new int[2];
+        double[] aryA = new double[2];
         
         System.out.print("Enter to integers to sort in acsending order:");
         aryA[0] = input.nextInt();
         aryA[1] = input.nextInt();
-        int temporaryA = aryA[0];
+        double temporaryA = aryA[0];
         
         if(aryA[0] > aryA[1]){
             aryA[0] = aryA[1];

@@ -27,10 +27,8 @@ public class A7Q1 {
         int numberOfStudents = input.nextInt();
         
         // create an array to store the percentages of the students
-        double[] aryMarks;
-        
         // the number of variables stored is the number of students in the class
-        aryMarks = new double[numberOfStudents];
+        double[] aryMarks = new double[numberOfStudents];
         
         // create a variable to store the average
         double average = 0;
