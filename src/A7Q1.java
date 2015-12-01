@@ -23,7 +23,7 @@ public class A7Q1 {
         int a = input.nextInt();
 
         //create an array
-        int[] marks = new int[a];
+        double[] marks = new double[a];
 
         //create a for loop to enter all of the grades
         for (int i = 0; i < marks.length; i++) {
@@ -32,12 +32,14 @@ public class A7Q1 {
 
         }
         //add up all of the grades
-        int total = 0;
+        double total = 0;
         for (int i = 0; i < marks.length; i++) {
             total = total + marks[i];
         }
         //calculate the average
         double average = total / a;
+        //round to the nearest hundredth
+        average = Math.round(average * 100) / 100.0;
 
         //display the average
         System.out.println("The average grade of the class is " + average);
