@@ -17,7 +17,8 @@ public class A7Q1 {
      */
     public static void main(String[] args) {
 
-    Scanner input = new Scanner(System.in);
+        
+        Scanner input = new Scanner(System.in);
     
         System.out.print("How many students in the class? ");
         int students = input.nextInt();
