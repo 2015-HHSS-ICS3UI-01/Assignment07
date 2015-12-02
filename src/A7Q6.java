@@ -10,7 +10,7 @@ import java.util.Scanner;
  *
  * @author richj0985
  */
-public class A7Q5 {
+public class A7Q6 {
 
     /**
      * @param args the command line arguments
@@ -19,13 +19,12 @@ public class A7Q5 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter the following information");
         System.out.print("Enter how many marks there are in the class: ");
         int numberOfMarks = input.nextInt();
         
         double[] aryMarks = new double[numberOfMarks];
         
-        System.out.println("Enter the marks (1 per line) to order from smallest to largest and determine the median: ");
+        System.out.println("Enter the marks (1 per line) to determine the properties: ");
         for(int index = 0; index < numberOfMarks; index = index + 1){
             aryMarks[index] = input.nextInt();
         }
@@ -39,26 +38,16 @@ public class A7Q5 {
             }
         }
         
-        System.out.println("The marks from smallest to largest are ");
-        for(int index2 = 0; index2 < numberOfMarks; index2 = index2 + 1){
-            System.out.print(aryMarks[index2] + " ");
-        }
+        double average = 0;
         
-        System.out.println("");
+        for(int index = 0; index < aryMarks.length; index = index + 1){
+            average = average + aryMarks[index];
+        } 
         
-        int median1Place = 0;
-        if(aryMarks.length != 1){
-            median1Place = aryMarks.length / 2;
-        }
-        double median1 = aryMarks[median1Place];
-        double medianAverage = median1;
+        average = average / numberOfMarks;
         
-        if((aryMarks.length % 2) == 0 && aryMarks.length != 1){
-            median1 = aryMarks[median1Place - 1];
-            double median2 = aryMarks[median1Place];
-            medianAverage = (median1 + median2) / 2;
-        }
-        
-        System.out.println("The median is " + medianAverage);
+        System.out.println("The lowest mark is " + aryMarks[0]);
+        System.out.println("The highest marks is " + aryMarks[aryMarks.length - 1]);
+        System.out.println("The average is " + average);
     }
 }
