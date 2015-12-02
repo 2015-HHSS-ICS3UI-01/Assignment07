@@ -42,8 +42,9 @@ public class A7Q2 {
         System.out.println("The heights that are above average are:");
         //check to see if any of the heights are above average
         for (int i = 0; i < heights.length; i++) {
-            if (heights[i] > average);
+            if (heights[i] > average){
             System.out.println(heights[i]);
+            }
         }
     }
 }
