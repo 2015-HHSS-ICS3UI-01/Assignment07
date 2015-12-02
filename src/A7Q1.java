@@ -40,7 +40,7 @@ public class A7Q1 {
         studentAverage = studentAverage/students;
         
         //round to two decimal places
-        studentAverage = Math.round(studentAverage * 100) / 100;
+        studentAverage = Math.round(studentAverage * 100) / 100.0;
 
         System.out.println("The class average is "+studentAverage);
 
