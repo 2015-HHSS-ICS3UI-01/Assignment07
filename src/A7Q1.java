@@ -16,28 +16,23 @@ public class A7Q1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
         
         Scanner input = new Scanner(System.in);
     
         System.out.print("How many students in the class? ");
         int students = input.nextInt();
-        
-        int marks = 0;
-        int average = 0;
+                        
         System.out.println("Enter the marks: ");
         int[] nums = new int[students];
         for(int i = 0; i < nums.length; i++){
-            marks = input.nextInt();
-            
+            nums[i] = input.nextInt();         
         }
-        average = marks + nums[marks];
-        //double average = average / students;
-        //for(int i = 0; i < nums.length; i++){
-        //    average = average + nums[i];
-        //}
-        //average = average / students;
-    
+        double total = 0;
+        for(int i = 0; i < nums.length; i++){
+            total = total + nums[i];
+        }
+        double average = total / students;
+        average = Math.round(average * 100)/100;
         System.out.println("The class average is " + average + "%");
     
     
