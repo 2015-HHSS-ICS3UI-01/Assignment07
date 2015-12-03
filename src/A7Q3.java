@@ -26,5 +26,16 @@ public class A7Q3 {
         for (int i = 0; i < order.length; i++) {
             order[i] = input.nextInt();
         }
+
+        //create temp spot for [0]
+        int temp = order[0];
+        
+        //sort to see if the first int is greater/lesser than the second int + swap
+        if (order[0] > order[1]) {
+            order[0] = order[1];
+            order[1] = temp;
+        }
+        
+        System.out.println("The integers in ascending order are: " + order[0] + " " + order[1]);
     }
 }

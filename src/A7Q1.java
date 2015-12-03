@@ -17,11 +17,11 @@ public class A7Q1 {
     public static void main(String[] args) {
         //create scanner
         Scanner input = new Scanner(System.in);
-        
+
         //get amount of students
         System.out.println("How many students in the class?");
         int students = input.nextInt();
-        
+
         //make an array of amount of students
         double[] average = new double[students];
 
@@ -30,19 +30,19 @@ public class A7Q1 {
         for (int i = 0; i < average.length; i++) {
             average[i] = input.nextDouble();
         }
-        
+
         //add the array values
         double studentAverage = 0;
-        for (int i = 0; i<average.length;i++){
-        studentAverage = studentAverage + average[i];
-    }
+        for (int i = 0; i < average.length; i++) {
+            studentAverage = studentAverage + average[i];
+        }
         //get average of all students
-        studentAverage = studentAverage/students;
-        
+        studentAverage = studentAverage / students;
+
         //round to two decimal places
         studentAverage = Math.round(studentAverage * 100) / 100.0;
 
-        System.out.println("The class average is "+studentAverage);
+        System.out.println("The class average is " + studentAverage);
 
 
     }
