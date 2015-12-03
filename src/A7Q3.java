@@ -32,5 +32,8 @@ public class A7Q3 {
         }
         
         System.out.println("The numbers in ascending order are " + aryA[0] + aryA[1]);
+        
+        // close scanner
+        input.close();
     }
 }

@@ -38,5 +38,8 @@ public class A7Q4 {
         for(int index2 = 0; index2 < 10; index2 = index2 + 1){
             System.out.print(aryMarks[index2] + " ");
         }
+        
+        // close scanner
+        input.close();
     }
 }

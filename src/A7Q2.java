@@ -49,5 +49,8 @@ public class A7Q2 {
         // calculate the average and output
         average = average / numberOfPeople;
         System.out.println("The average height is " + average + ".");
+        
+        // close scanner
+        input.close();
     }
 }

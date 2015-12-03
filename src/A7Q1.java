@@ -48,5 +48,8 @@ public class A7Q1 {
         // calculate the average and output
         average = average / numberOfStudents;
         System.out.println("The average of the class is " + average + "%");
+        
+        // close scanner
+        input.close();
     }
 }

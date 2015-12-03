@@ -60,5 +60,8 @@ public class A7Q5 {
         }
         
         System.out.println("The median is " + medianAverage);
+        
+        // close scanner
+        input.close();
     }
 }

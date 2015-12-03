@@ -19,10 +19,28 @@ public class A7Q7 {
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
-        boolean [] aryPrime = new boolean[2000];
+        System.out.println("The prime numbers are: ");
         
-        for(int index = 2; index <= 2000; index = index + 1){
-            aryPrime[index] = 
+        boolean [] aryPrime = new boolean[1001];
+        for(int index = 0; index < aryPrime.length; index = index + 1){
+            aryPrime[index] = true;
         }
+        
+        for(int primeNum = 2; primeNum <= 1000; primeNum = primeNum + 1){
+            if(aryPrime[primeNum] != false){
+                for(int sleve = 2; sleve * primeNum <= 1000; sleve = sleve + 1){
+                    aryPrime[primeNum * sleve] = false;
+                }
+            }
+        }
+        
+        for(int index2 = 2; index2 <= 1000; index2 = index2 + 1){
+            if(aryPrime[index2] == true){
+                System.out.println(index2);
+            }
+        }
+        
+        // close scanner
+        input.close();
     }
 }

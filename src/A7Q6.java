@@ -49,5 +49,8 @@ public class A7Q6 {
         System.out.println("The lowest mark is " + aryMarks[0]);
         System.out.println("The highest marks is " + aryMarks[aryMarks.length - 1]);
         System.out.println("The average is " + average);
+        
+        // close scanner
+        input.close();
     }
 }
