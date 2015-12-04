@@ -19,7 +19,7 @@ public class A7Q2 {
         int people = input.nextInt();
         double[] heights = new double [people];
         System.out.println("Please enter a height for each participant in feet.");
-        for (int e = people - 1; e > -1; e--){
+        for (int e = people; e < heights.length; e++){
             heights[e] = input.nextDouble();
             if(heights[e] >= 5.9){
                 System.out.println("Your height of " + heights[e] + " is greater than");

@@ -20,7 +20,7 @@ public class A7Q1 {
         int students = input.nextInt();
         int[] marks = new int [students];
         System.out.println("Enter a mark for each student.");
-        for (int e = students -1; e > -1; e--){
+        for (int e = students; e < marks.length; e++){
             marks[e] = input.nextInt();
             answer = answer + marks[e];
         
