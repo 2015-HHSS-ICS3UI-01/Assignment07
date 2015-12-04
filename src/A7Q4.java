@@ -19,7 +19,7 @@ public class A7Q4 {
         Scanner input = new Scanner(System.in);
 
         //create an array
-        int[] marks = new int[4];
+        int[] marks = new int[10];
 
         //create a loop to enter the marks
         for (int e = 0; e < marks.length; e++) {
