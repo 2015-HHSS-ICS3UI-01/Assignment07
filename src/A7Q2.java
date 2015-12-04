@@ -10,29 +10,28 @@ import java.util.Scanner;
  *
  * @author iorgs3184
  */
-public class A7Q1 {
+public class A7Q2 {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        
-        Scanner input = new Scanner(System.in);
+
+    Scanner input = new Scanner(System.in);
     
-        System.out.print("How many students in the class? ");
-        int students = input.nextInt();
+        System.out.print("How many people are there? ");
+        int people = input.nextInt();
                         
-        System.out.println("Enter the marks: ");
-        int[] nums = new int[students];
+        System.out.println("Enter the heights: ");
+        int[] nums = new int[people];
         for(int i = 0; i < nums.length; i++){
             nums[i] = input.nextInt();         
         }
-        double total = 0;
+        int total = 0;
         for(int i = 0; i < nums.length; i++){
             total = total + nums[i];
         }
-        double average = total / students;
-        average = Math.round(average * 100)/100;
-        System.out.println("The class average is " + average + "%");    
+        int average = total / people;
+        System.out.println("The average height is " + average + "cm");   
     }
 }
