@@ -37,11 +37,13 @@ public class A7Q2 {
             total = total + heights[i];
 
 
-
+         //crarte a variable that will store the average height 
         } int average=total/peopleamount;
-        
+        //check each height to seee if it is larger than the average height 
          for (int i = 0; i < heights.length; i++) {
+             //if a height is greater than th4 average height print that height to the user 
              if(heights[i]>average){
+                 //print heights that are larger than the average to the user
                  System.out.println("Heights that are above average are " + heights[i]);
              }
                  
