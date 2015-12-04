@@ -51,6 +51,16 @@ public class A7Q5 {
         System.out.println();
         
         //find the median
-        
+        if(marks%2==0){
+            int medianOne = marks/2;
+            int medianTwo = medianOne-1;
+            double median = sort[medianOne]+sort[medianTwo];
+            median = median/2;
+            System.out.println("The median is: "+median);
+        }else{
+            int median = marks/2;
+            System.out.println("The median is: "+sort[median]);
+        }
+       
     }
 }
