@@ -44,11 +44,13 @@ public class A7Q5 {
         for(int i = 0; i < length; i++){
             System.out.println(nums[i]);
         }
-        int med;
+        double med;
         if(length%2==1){
-            med = nums[(length-1)/2];
+            med = nums[length/2];
         }else{
-            
+            int spot = length/2;
+            med = (nums[spot] + nums[spot-1]);
+            med = med/2;
         }
         System.out.println("Your medein is.");
         System.out.println(med);
