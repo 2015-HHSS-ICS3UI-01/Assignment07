@@ -41,7 +41,7 @@ public class A7Q3 {
                 //set the number in spot 0 to the temp integer(number in spot 1)
                 numbers[0] = temp;
 
-152
+
 
             }
             //tell the user the numbers in ascending order 
