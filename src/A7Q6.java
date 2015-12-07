@@ -44,8 +44,30 @@ public class A7Q6 {
                 }
             }
         }
-        //find the highest mark
-        int highestMark = classMarks[classMarks.length];
+        //find the highest mark by souting the last int in the array
+        int highestMark = classMarks[classMarks.length - 1];
         System.out.println("The highest mark in the class is " + highestMark);
+
+        //find the lowest mark by souting the first int in the array
+        int lowestMark = classMarks[0];
+        System.out.println("The lowest mark in the class is " + lowestMark);
+
+        //find the average
+        //find sum of the array
+        int total = 0;
+        for (int t = 0; t < classMarks.length; t++) {
+            total = total + classMarks[t];
+
+        }
+        //divide the total by the class size
+
+        double averageMark = total / c;
+        System.out.println("The average mark in the class is " + averageMark);
+
+        //close the scanner
+        input.close();
+
+
+
     }
 }
