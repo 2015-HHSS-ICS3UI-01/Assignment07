@@ -22,16 +22,19 @@ public class A7Q7 {
         //create array
         boolean[]sieve=new boolean[1001];
         
+        //make all numbers true
         for(int i=0;i<sieve.length;i++){
             sieve[i]=true;
         }
         
+        //check which numbers are false
         for (int x = 2; x < sieve.length; x++) {
             for (int y = 2*x; y < sieve.length; y = y + x) {
                 sieve[y]=false;
                 }
 
             }
+        //output all true numbers
         for(int i=2;i<sieve.length;i++){
             if(sieve[i]==true){
                 System.out.println(i);
