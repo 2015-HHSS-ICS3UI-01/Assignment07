@@ -22,7 +22,7 @@ public class A7Q2 {
         System.out.print("How many people are there? ");
         int people = input.nextInt();
                         
-        System.out.println("Enter the heights: ");
+        System.out.println("Enter the heights(In centimetres): ");
         int[] nums = new int[people];
         for(int i = 0; i < nums.length; i++){
             nums[i] = input.nextInt();         

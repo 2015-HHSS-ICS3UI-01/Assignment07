@@ -14,7 +14,7 @@ public class A7Q5 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.print("Please enter the number of marks that are going to be entered: ");        
+        System.out.print("Please enter the number of marks: ");        
         int number = input.nextInt();
         
         int[] nums = new int[number];
@@ -35,7 +35,7 @@ public class A7Q5 {
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + ", ");
         }
-        number = number / 2;
+        number = number / 2 ;
         System.out.println("The median is " + nums[number]);
 
     }
