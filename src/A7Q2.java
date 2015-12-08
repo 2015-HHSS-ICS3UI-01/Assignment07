@@ -27,11 +27,12 @@ public class A7Q2 {
         for(int i = 0; i < nums.length; i++){
             nums[i] = input.nextInt();         
         }
-        int total = 0;
+        double average = 0;
         for(int i = 0; i < nums.length; i++){
-            total = total + nums[i];
+            average = average + nums[i];
         }
-        int average = total / people;
+        average = average / people;
+        average = Math.round(average * 10)/10;
         System.out.println("The average height is " + average + "cm");   
     }
 }

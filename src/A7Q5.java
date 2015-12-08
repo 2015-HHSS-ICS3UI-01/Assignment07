@@ -13,12 +13,13 @@ public class A7Q5 {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-        
+                     
         System.out.print("Please enter the number of marks: ");        
         int number = input.nextInt();
         
         int[] nums = new int[number];
         
+        System.out.println("Please enter all the Marks: ");
         for (int i = 0; i < nums.length; i++) {
             nums[i] = input.nextInt();
         }
@@ -32,11 +33,17 @@ public class A7Q5 {
                 }
             }
         }       
+        System.out.print("Marks in ascending order are ");
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + ", ");
         }
-        number = number / 2 ;
-        System.out.println("The median is " + nums[number]);
-
+        System.out.println();       
+        
+        if (nums.length % 2 == 0) {
+            number = ((int) nums[nums.length / 2] + (int) nums[nums.length / 2 - 1]) / 2;
+        } else {
+            number = (int) nums[nums.length / 2];
+        }           
+        System.out.println("The median is " + number);
     }
 }

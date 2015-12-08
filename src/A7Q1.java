@@ -27,12 +27,12 @@ public class A7Q1 {
         for(int i = 0; i < nums.length; i++){
             nums[i] = input.nextInt();         
         }
-        double total = 0;
+        double average = 0;
         for(int i = 0; i < nums.length; i++){
-            total = total + nums[i];
+            average = average + nums[i];
         }
-        double average = total / students;
-        average = Math.round(average * 100)/100;
+        average = average / students;
+        average = Math.round(average * 10)/10;
         System.out.println("The class average is " + average + "%");    
     }
 }
