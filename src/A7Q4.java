@@ -17,18 +17,11 @@ public class A7Q4 {
      */
     public static void main(String[] args) {
 
+ Scanner input = new Scanner(System.in);
 
-
-        //new scanner 
-        Scanner input = new Scanner(System.in);
-        //ask user to enter how many marks there are 
-        System.out.println("please enter the amount of marks ");
-        //allow user to enter amount of marks and store it in a variable 
-        int amount = input.nextInt();
-
-
+        
         //set the amont of numbers, to the amount entered by the user 
-        int[] numbers = new int[amount];
+        int[] numbers = new int[10];
 
 
 
@@ -42,9 +35,9 @@ public class A7Q4 {
 
         }
         //AS LONG AS X IS LESS THAN 9 REPEAT 
-        for (int x = 0; x < amount-1; x++) {
+        for (int x = 0; x < 9-1; x++) {
             //int y starts at one avove x and as long as it is less than 9 
-            for (int y = x + 1; y < amount; y++) {
+            for (int y = x + 1; y < 10; y++) {
                 if (numbers[x] > numbers[y]) {
                     //crate a temp variable to store the number in place y
                     int temp = numbers[y];
