@@ -7,11 +7,8 @@ import java.util.Scanner;
  */
 
 /**
- * Create a program that will ask a user for the size of a class. It will then 
- * read in all of the marks for the class into an array. Once this is done, 
- * the program should computer the lowest mark, the highest mark, and the 
- * average mark for the class that has been entered. These 3 things should be 
- * output to the user in a nice way. 
+ * Create a program that will ask a user for the size of a class and the marks for each student, then output the highest mark, lowest mark, and median. 
+ * 
  * 
  * @author richj0985
  */

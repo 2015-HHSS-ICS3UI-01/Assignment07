@@ -4,8 +4,10 @@ import java.util.Scanner;
 /**
  *
  * Create a program that will user enter in a number of student marks, order the marks
- * in the array using bubble sort and then output the median (middle mark).   If the
- * number of marks entered is even then take the 2 middle marks and average them for the median mark
+ * in the array using bubble sort and then output the median (middle mark).
+ * 
+ * - If the number of marks entered is even then take the 2 middle marks.
+ * - Then finally average them for the median mark.
  * 
  * @author richj0985
  */
