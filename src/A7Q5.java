@@ -60,6 +60,12 @@ public class A7Q5 {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
+        
+        int number2=numbers[amount]%2;
+        if(number2>0){
+            System.out.println(number2+1);
+        }
+        
 
         
         
