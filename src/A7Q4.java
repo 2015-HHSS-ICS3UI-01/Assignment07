@@ -1,13 +1,9 @@
 
 import java.util.Scanner;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
- *
+ * create a program that will order 10 marks from smallest to largest using a technique called bubblesort
+ * 
  * @author richj0985
  */
 public class A7Q4 {
@@ -16,7 +12,6 @@ public class A7Q4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // create a program that will order 10 marks from smallest to largest
         
         // create a scanner for input
         Scanner input = new Scanner(System.in);
@@ -54,6 +49,7 @@ public class A7Q4 {
         for(int index2 = 0; index2 < 10; index2 = index2 + 1){
             System.out.print(aryMarks[index2] + " ");
         }
+        System.out.println("");
         
         // close scanner
         input.close();

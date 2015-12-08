@@ -1,13 +1,12 @@
 
 import java.util.Scanner;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 /**
  *
+ * Create a program that will user enter in a number of student marks, order the marks
+ * in the array using bubble sort and then output the median (middle mark).   If the
+ * number of marks entered is even then take the 2 middle marks and average them for the median mark
+ * 
  * @author richj0985
  */
 public class A7Q5 {
@@ -16,8 +15,6 @@ public class A7Q5 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // create a program that will order a certain number of marks given from the user from smallest to largest
-        
         // create a scanner for input
         Scanner input = new Scanner(System.in);
         
@@ -33,9 +30,9 @@ public class A7Q5 {
             double[] aryMarks = new double[numberOfMarks];
 
             // ask the user to input all the marks and use a for loop to store the marks in the array
-            System.out.println("Enter the marks (1 per line) to order from smallest to largest and determine the median: ");
+            System.out.println("Enter the marks of each student (1 per line): ");
             for(int index = 0; index < numberOfMarks; index = index + 1){
-                aryMarks[index] = input.nextInt();
+                aryMarks[index] = input.nextDouble();
             }
 
             // Bubble Sorting
@@ -57,35 +54,48 @@ public class A7Q5 {
             }
 
             // output the marks in order from smallest to largest
-            System.out.print("The marks from smallest to largest are ");
+            System.out.print("The marks from smallest to largest are:  ");
             for(int index2 = 0; index2 < numberOfMarks; index2 = index2 + 1){
                 System.out.print(aryMarks[index2] + " ");
             }
-
             System.out.println("");
 
-            double median1 = 0;
-            double medianAverage = median1;
-
+            // with the marks now ordered in the array, determine the median mark
+            // by using the middle mark of the ordered array
+            // if the number of marks is even then average the middle 2 marks
+            
+            //create variable for the final median product
+            double finalMedian = 0;
 
             // create a variable to store the median position
-            // the median will start as a value of 
-            int median1Place = 0;
+            int medianIndex = 0;
 
-            // if the length is larger then 1 then the 
-            if(aryMarks.length > 1){
-                median1Place = aryMarks.length / 2;
+            // Special case when the class only had 1 student and hence 1 mark
+            // in this case the median is the single mark
+            if(aryMarks.length == 1){
+                // only 1 mark for class, median is the single mark
+                finalMedian = aryMarks[0];
             }
-            median1 = aryMarks[median1Place];
-            medianAverage = median1;
+            else {
+                // more than 1 student in class, compute the middleIndex of the array
+                // be sure to subtract 1 since array is 0 based. 
+                medianIndex = (aryMarks.length / 2);
 
-            if((aryMarks.length % 2) == 0 && aryMarks.length != 1){
-                median1 = aryMarks[median1Place - 1];
-                double median2 = aryMarks[median1Place];
-                medianAverage = (median1 + median2) / 2;
+                // the final median should be location within the exact middle of the array
+                finalMedian = aryMarks[medianIndex];
+            
+                // if the array has an even number of marks we need to average the 2 middle marks
+                if( (aryMarks.length % 2) == 0 ){
+                    // the other middle median will be 1 index less than computed middle index 
+                    double median2 = aryMarks[medianIndex - 1];
+                
+                    // the final median is the mean of the two medians3
+                    finalMedian = Math.round( ( (finalMedian + median2) / 2.0) * 100.0) / 100.0; 
+                }
             }
-
-            System.out.println("The median is " + medianAverage);
+            
+            // output median
+            System.out.println("The median mark is " + finalMedian);
 
         }
         // close scanner
