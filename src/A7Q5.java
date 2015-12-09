@@ -5,7 +5,6 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author lalim9800
@@ -32,14 +31,14 @@ public class A7Q5 {
 
         //as long as i is grater les than the amout of spaces avalible in nummbers allow user to enter a number 
         for (int i = 0; i < numbers.length; i++) {
-           
+
             System.out.println("please enter the marks ");
             //allow user to enter numbers 
             numbers[i] = input.nextInt();
 
         }
         //AS LONG AS X IS LESS THAN  the amount REPEAT 
-        for (int x = 0; x < amount-1; x++) {
+        for (int x = 0; x < amount - 1; x++) {
             //int y starts at one avove x and as long as it is less than 9 
             for (int y = x + 1; y < amount; y++) {
                 if (numbers[x] > numbers[y]) {
@@ -60,17 +59,30 @@ public class A7Q5 {
         for (int i = 0; i < numbers.length; i++) {
             System.out.println(numbers[i]);
         }
-        
-        int number2=numbers[amount]%2;
-        if(number2>0){
-            System.out.println(number2+1);
+        //create new integer to store the remainder amount 
+        int number2 = amount % 2;
+        //if the remainder is 0 (even number) 
+        if (number2 == 0) {
+            //create varible to store the first median number 
+            int firstspot = amount / 2;
+            //create integer to store second median number (one less then first number)
+            int secondspot = amount - 1;
+            //calculate the average of the two median numbers 
+            int median = ((numbers[firstspot] + numbers[secondspot]) / 2);
+            //tell user the median number 
+            System.out.println("The median number is " + median);
+            //else statement (not even)
+        } else {
+            //find the middle number in the array in the store it as the median number 
+            int medianspot = amount / 2;
+            //make a varible that stores the number at the middle spot 
+            int medianeven = numbers[medianspot];
+            //tell user the median number 
+             System.out.println("The median number is " + medianeven);
         }
-        
 
-        
-        
+
+
+
     }
 }
-
-    
-
