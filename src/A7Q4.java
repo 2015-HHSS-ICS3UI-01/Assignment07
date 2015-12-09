@@ -8,20 +8,25 @@ import java.util.Scanner;
  */
 /**
  *
- * @author Sami
+ * @author iorgs3184
  */
 public class A7Q4 {
 
     public static void main(String[] args) {
 
+        //new scanner
         Scanner input = new Scanner(System.in);
 
+        //makes an array of 10 spots
         int[] nums = new int[10];
 
+        //asks user to enter 10 marks
         System.out.print("Type in 10 marks: ");
         for (int i = 0; i < 10; i++) {
             nums[i] = input.nextInt();
         }
+        //loops through all 10 marks
+        //rearanges and puts them in ascending order
         for (int i = 0; i < 10; i++) {
             for (int s = 0; s < 10; s++) {
                 if (nums[i] < nums[s]) {
@@ -32,6 +37,7 @@ public class A7Q4 {
                 }
             }
         }
+        //prints out marks un ascending order
         for (int i = 0; i < 9; i++) {
             System.out.print(nums[i] + ", ");
         }

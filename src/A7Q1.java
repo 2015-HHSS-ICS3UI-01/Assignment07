@@ -5,7 +5,6 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author iorgs3184
@@ -17,22 +16,31 @@ public class A7Q1 {
      */
     public static void main(String[] args) {
         
+        //new scanner
         Scanner input = new Scanner(System.in);
-    
+
+        //asks user how many students in class
         System.out.print("How many students in the class? ");
         int students = input.nextInt();
-                        
+
+        //asks user to enter marks
         System.out.println("Enter the marks: ");
+        //makes array of marks entered
         int[] nums = new int[students];
-        for(int i = 0; i < nums.length; i++){
-            nums[i] = input.nextInt();         
+        //gets number from when the user entered at students
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = input.nextInt();
         }
         double average = 0;
-        for(int i = 0; i < nums.length; i++){
+        //adds all marks together
+        for (int i = 0; i < nums.length; i++) {
             average = average + nums[i];
         }
+        //takes total and divides by marks entered
         average = average / students;
-        average = Math.round(average * 10)/10;
-        System.out.println("The class average is " + average + "%");    
+        //rounded to nearest hundreth place value
+        average = Math.round(average * 10) / 10;
+        //prints out the average
+        System.out.println("The class average is " + average + "%");
     }
 }

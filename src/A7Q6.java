@@ -5,7 +5,6 @@ import java.util.Scanner;
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-
 /**
  *
  * @author iorgs3184
@@ -17,16 +16,22 @@ public class A7Q6 {
      */
     public static void main(String[] args) {
 
-    Scanner input = new Scanner(System.in);
-        
+        //new scanner
+        Scanner input = new Scanner(System.in);
+
+        //asks user to enter the number of students in a class
         System.out.print("How many students in the class? ");
         int students = input.nextInt();
-    
+
+        //asks for all the students marks
         System.out.println("What are the marks of each student? ");
+        //makes array of the amount of students in class
         int[] nums = new int[students];
-        for(int i = 0; i < nums.length; i++){
-            nums[i] = input.nextInt();         
-        }
+        //gets users input for all the students
+        for (int i = 0; i < nums.length; i++) {
+            nums[i] = input.nextInt();
+        }//loops through all marks
+        //rearanges and puts them in ascending order
         for (int i = 0; i < nums.length; i++) {
             for (int s = 0; s < nums.length; s++) {
                 if (nums[i] < nums[s]) {
@@ -37,21 +42,29 @@ public class A7Q6 {
                 }
             }
         }
+        //prints out all the marks in ascending order
         System.out.print("Marks in ascending order are: ");
         for (int i = 0; i < nums.length; i++) {
             System.out.print(nums[i] + ", ");
         }
+        //leaves a blank line
         System.out.println();
-        
-        System.out.println("Lowest mark: " + nums[0]);
-        System.out.println("Highest mark: " + nums[students - 1]);
-        
+
+        //prints out lowest mark from position [0]
+        System.out.println("Lowest mark: " + nums[0] + "%");
+        //prints out highest mark at final position
+        System.out.println("Highest mark: " + nums[students - 1] + "%");
+
         double average = 0;
-        for(int i = 0; i < nums.length; i++){
+        //adds up all the marks
+        for (int i = 0; i < nums.length; i++) {
             average = average + nums[i];
         }
+        //finds average by dividing total by students
         average = average / students;
-        average = Math.round(average * 10)/10;
-        System.out.println("The average for the class is " + average  + "%");
+        //roundeds to nearest hundreth place value
+        average = Math.round(average * 10) / 10;
+        //prints out the average mark
+        System.out.println("The average for the class is " + average + "%");
     }
 }
