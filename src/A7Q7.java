@@ -15,7 +15,7 @@ public class A7Q7 {
     public static void main(String[] args) {
         int p = 2;
         boolean[] prime = new boolean[1000];
-        for(int i = 0; i <= 1000; i++){
+        for(int i = 0; i <= 999; i++){
             prime[i] = true;
         }
         prime[0] = false;
@@ -31,7 +31,7 @@ public class A7Q7 {
                 }
             }
         }
-        for(int i = 1; i<=1000; i++){
+        for(int i = 1; i<=999; i++){
             if(prime[i]){
                 System.out.println(i+1);
             }
