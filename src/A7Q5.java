@@ -42,9 +42,10 @@ public class A7Q5 {
             }
         }
         //prints out marls in ascending order
-        System.out.print("Marks in ascending order are ");
-        for (int i = 0; i < nums.length; i++) {
-            System.out.print(nums[i] + ", ");
+        System.out.print("Marks in ascending order are: ");
+        System.out.print(nums[0]);
+        for (int i = 1; i < nums.length; i++) {
+            System.out.print(", " + nums[i]);
         }
         //leaves a blank line
         System.out.println();

@@ -21,7 +21,7 @@ public class A7Q4 {
         int[] nums = new int[10];
 
         //asks user to enter 10 marks
-        System.out.print("Type in 10 marks: ");
+        System.out.println("Type in 10 marks: ");
         for (int i = 0; i < 10; i++) {
             nums[i] = input.nextInt();
         }
@@ -38,8 +38,10 @@ public class A7Q4 {
             }
         }
         //prints out marks un ascending order
-        for (int i = 0; i < 9; i++) {
-            System.out.print(nums[i] + ", ");
+        System.out.print("The marks in ascending order are: ");
+        System.out.print(nums[0]);
+        for (int i = 1; i < nums.length; i++) {
+            System.out.print(", " + nums[i]);
         }
     }
 }

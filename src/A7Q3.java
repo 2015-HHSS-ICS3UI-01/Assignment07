@@ -24,7 +24,7 @@ public class A7Q3 {
         int[] nums = new int[2];
 
         //asks user for two numbers
-        System.out.print("Enter two numbers: ");
+        System.out.println("Enter two numbers: ");
         //gets input twice from user
         for (int i = 0; i < nums.length; i++) {
             numbers = input.nextInt();
@@ -34,11 +34,11 @@ public class A7Q3 {
         //if it is than puts in last position
         if (nums[0] > nums[1]) {
             System.out.println("Your numbers in ascending order are "
-                    + nums[1] + ", " + nums[0]);
+                    + nums[1] + " and " + nums[0]);
         }//if first number isnt bigger than its put in first number position 
         else {
             System.out.println("Your numbers in ascending order are "
-                    + nums[0] + "," + nums[1]);
+                    + nums[0] + " and " + nums[1]);
         }
     }
 }
