@@ -28,9 +28,14 @@ public class A7Q3 {
         A[1] = input.nextInt();
         
         //put them in order from smallest to largest
-        
+        int first = A[0];
+        int second = A[1];
+        if (A[0] > A[1]) {
+              A[0] = second;
+              A[1] = first;
+        }
         
         //The integers in ascending order are 
-        System.out.println("The integers in ascending order are: ");
+        System.out.println("The integers in ascending order are: " + A[0] + " " + A[1]);
     }
 }
