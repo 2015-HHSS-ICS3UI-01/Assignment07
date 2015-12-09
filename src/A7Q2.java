@@ -39,7 +39,7 @@ public class A7Q2 {
         //finds average by dividing total by people
         average = average / people;
         //roundeds to nearest hundreth place value
-        average = Math.round(average * 10) / 10;
+        average = Math.round(average * 100) / 100f;
         //prints out the average height in centimetres
         System.out.println("The average height is " + average + "cm");
     }

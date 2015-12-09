@@ -64,7 +64,7 @@ public class A7Q6 {
         //finds average by dividing total by students
         average = average / students;
         //roundeds to nearest hundreth place value
-        average = Math.round(average * 10) / 10;
+        average = Math.round(average * 100) / 100f;
         //prints out the average mark
         System.out.println("The average for the class is " + average + "%");
     }
