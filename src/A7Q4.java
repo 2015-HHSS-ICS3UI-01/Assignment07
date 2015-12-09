@@ -21,7 +21,7 @@ public class A7Q4 {
 
         
         //set the amont of numbers, to the amount entered by the user 
-        int[] numbers = new int[10];
+          int[] numbers = new int[10];
 
 
 
