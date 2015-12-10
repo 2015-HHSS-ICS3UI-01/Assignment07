@@ -15,7 +15,7 @@ public class A7Q4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // inport scanner
+        // import scanner
         Scanner input = new Scanner(System.in);
 
         //create array with 10 places
@@ -34,13 +34,13 @@ public class A7Q4 {
         order[9] = input.nextInt();
 
         //sort the marks from lowest to highest
-        int temp;
         for (int x = 0; x < order.length - 1; x++) {
-            for (int y = 0; y < order.length - 1; y++) {
-                if (order[y] < order[y - 1]) {
-                    temp = order[y - 1];
-                    order[y] = order[y + 1];
-                    order[y] = temp;
+            for (int y = 0; y < order.length + 1; y++) {
+                int temp1 = order[x];
+                int temp2 = order[y];
+                if (order[x] > order[y]) {
+                    order[x] = temp2;
+                    order[y] = temp1;
                 }
             }
         }
