@@ -2,7 +2,7 @@
 import java.util.Scanner;
 
 /**
- * create a program that will order 10 marks from smallest to largest using a technique called bubblesort
+ * create a program that will order 10 marks from smallest to largest using a technique called bubblesort.
  * 
  * @author richj0985
  */

@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 /**
  *
- * Write a program to read in a series of heights of people and output all those that are above average 
+ * Write a program to read in a series of heights of people and output the average and all those that are above average 
  * in height for the group. 
  * 
  * @author richj0985

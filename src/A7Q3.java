@@ -10,8 +10,7 @@ import java.util.Scanner;
  *
  * Write a program to create and populate an array that contains only two integer elements, outputting the integers in ascending order. 
  * 
- * - Moreover, the program will ensure the elements are placed in ascending order, once the 
- * - array has been populated. 
+ * - The program will ensure the elements are placed in ascending order, once the array has been populated. 
  * - For example the program accept a series of numbers.
  * - Then it will interchange the values so that the resulting modified array is in ascending order.
  * - The sorted values are then outputted. 
