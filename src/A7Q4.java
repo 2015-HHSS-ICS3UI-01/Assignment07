@@ -21,17 +21,11 @@ public class A7Q4 {
         //create array with 10 places
         int[] order = new int[10];
 
-        System.out.println("Enter 10 marks: ");
-        order[0] = input.nextInt();
-        order[1] = input.nextInt();
-        order[2] = input.nextInt();
-        order[3] = input.nextInt();
-        order[4] = input.nextInt();
-        order[5] = input.nextInt();
-        order[6] = input.nextInt();
-        order[7] = input.nextInt();
-        order[8] = input.nextInt();
-        order[9] = input.nextInt();
+        //enter 10 marks
+        for (int i = 0; i < order.length; i++) {
+            System.out.println("Enter the marks:");
+            order[i] = input.nextInt();
+        }
 
         //sort the marks from lowest to highest
         for (int x = 0; x < order.length - 1; x++) {

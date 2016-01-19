@@ -47,25 +47,19 @@ public class A7Q5 {
         System.out.println("The marks from lowest to highest are: ");
 
         //print out the values
-        int i = 0; 
-        while (i < order.length) {
+        for (int i = 0; i < order.length; i++) {
             System.out.println(order[i]);
-             i++;
         }
-
-        //calculate the median
-        int half = numbers / 2;
-        int last = numbers;
-        if(numbers >= 0)
-            last = numbers % 10;
-        double median = order[half];
-        double media = order[i] / 2;
-        if (numbers == 2 || numbers == 4 || numbers == 6 || numbers == 8 || numbers == 0) {
+      
+        if (numbers %2 == 0) {
+            //calculate the median
+            double media = (order[numbers/2] + order[(numbers/2)-1]) / 2;
             //print out the median
-            System.out.println("The median is " + median);
-        } else {
-            //print out the media
             System.out.println("The media is " + media);
+        } else {
+            //calculate the media
+            double median = order[numbers / 2];
+            System.out.println("The median is " + median);
         }
 
 

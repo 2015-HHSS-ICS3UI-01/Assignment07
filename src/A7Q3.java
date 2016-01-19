@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -16,7 +15,7 @@ public class A7Q3 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // inport scanner
+        // import scanner
         Scanner input = new Scanner(System.in);
         
         //create array with 2 places

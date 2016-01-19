@@ -1,4 +1,3 @@
-
 import java.util.Scanner;
 
 /*
@@ -15,7 +14,7 @@ public class A7Q2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        //input scanner
+        //import scanner
         Scanner input = new Scanner(System.in);
 
         //how many people
@@ -23,28 +22,27 @@ public class A7Q2 {
         int people = input.nextInt();
 
         // make an array of ints with the # of people as the # of spots
-        int[] nums = new int[people];
+        double[] heights = new double[people];
 
         //enter all the heights
-        for (int i = 0; i < nums.length; i++) {
+        for (int i = 0; i < heights.length; i++) {
             System.out.println("Enter the heights:");
-            nums[i] = input.nextInt();
+            heights[i] = input.nextDouble();
         }
 
         //adding up all the heights in the array
-        int total = 0;
-        for (int i = 0; i < nums.length; i++) {
-            total = total + nums[i];
+        double total = 0;
+        for (int i = 0; i < heights.length; i++) {
+            total = total + heights[i];
         }
 
         //calculate the average
         double average = total / people;
 
-        int i = 0;
-        while (nums[i] == nums[i]) {
-            i++;
-            if (nums[i] > average) {
-                System.out.println(nums[i]);
+        //go through all the heights and print out the ones that are larger than the average
+        for(int i = 0; i < heights.length; i++){
+            if(heights[i] > average){
+                System.out.println(heights[i]);
             }
         }
 

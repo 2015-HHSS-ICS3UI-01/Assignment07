@@ -23,25 +23,25 @@ public class A7Q1 {
         System.out.println("How many students in the class?");
         int students = input.nextInt();
         
-        // make an array of ints with 3 spots
-        int[] nums = new int[students];
+        // make an array of ints with as many spots as there are students
+        double[] grades = new double[students];
         
         //enter all the grades
-        for(int i = 0; i< nums.length; i++){
+        for(int i = 0; i< grades.length; i++){
         System.out.println("Enter the marks:");
-            nums[i] = input.nextInt();
+            grades[i] = input.nextDouble();
         }
         
-        //adding up all the grades in the array
-        int total = 0;
-        for(int i = 0; i < nums.length; i++) {
-            total = total + nums[i];
+        //add up all the grades in the array
+        double total = 0;
+        for(int i = 0; i < grades.length; i++) {
+            total = total + grades[i];
         }
         
         //calculate the average
         double average = total / students;
         
-        //your average is 
-        System.out.println("The class average is " + average + "%");
+        //your average is: (rounded to 2 digits)
+        System.out.println("The class average is " + String.format("%.2f",average) + "%");
     }
 }
