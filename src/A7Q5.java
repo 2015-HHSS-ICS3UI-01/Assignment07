@@ -43,6 +43,6 @@ public class A7Q5 {
                 }
             }
         }
-        // Print the marks in order from lowest to highest using a for loop FIX THIS PART!
+        // Print to the user the median of all the marks
     }
 }
