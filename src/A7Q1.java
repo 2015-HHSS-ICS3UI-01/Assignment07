@@ -19,7 +19,7 @@ public class A7Q1 {
         Scanner input = new Scanner(System.in);
         double total = 0;
         // Ask the user how many students there are in the class
-        System.out.println("How many students are in the class?");
+        System.out.println("How many students are there in the class?");
         // Save the user's input to variable 'studentNum'
         int studentNum = input.nextInt();
         // Create new array, involving studentNum
@@ -31,9 +31,9 @@ public class A7Q1 {
             marks[i] = input.nextInt();
             total = total + marks[i];
         }
-        // Calculate the total average and round
+        // Calculate the total average and round to the nearest hundreth decimal place
         double avg = Math.round((total / marks.length) * 100d) / 100d;
-        // Output test results to screen
-        System.out.println("The class average is: " + avg + "%.");
+        // Print the test results 
+        System.out.println("The class average is " + avg + "%.");
     }
 }

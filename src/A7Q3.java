@@ -21,7 +21,7 @@ public class A7Q3 {
         int[] A = new int[2];
         // Ask the user to enter two integers
         System.out.println("Enter two integers.");
-        // Store the integers in the arrau using for loop
+        // Store the integers in the array using for loop
         for (int i = 0; i < 2; i++) {
             A[i] = input.nextInt();
         }

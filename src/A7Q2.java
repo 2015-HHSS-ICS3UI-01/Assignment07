@@ -35,9 +35,8 @@ public class A7Q2 {
         // Calculate the total average height of the entire class
         double avg = Math.round((total / heights.length) * 100) / 100;
         // Output the class height average
-        System.out.println("The class height avarage is: " + avg + "cm.");
-
-        // Output to the users which students are above the class height average
+        System.out.println("The class height avarage is " + avg + "cm.");
+        // Print which students are above the class height average
         System.out.println("The following number(s) are the students who are above the class height average.");
         // Find which height is above average by using for loop to go through the entire array
         for (int i = 0; i < heights.length; i++) {
