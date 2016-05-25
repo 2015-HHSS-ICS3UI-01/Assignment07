@@ -51,7 +51,7 @@ public class A7Q5 {
             // EVEN
             int mid = marks[(marksNum / 2)];
             int mid2 = marks[(marksNum / 2) - 1];
-            int median = ((mid + mid2) / 2);
+            double median = ((mid + mid2) / 2.0);
             System.out.println(median);
         } else {
             // ODD
