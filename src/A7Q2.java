@@ -18,26 +18,26 @@ public class A7Q2 {
         // Create new scanner
         Scanner input = new Scanner(System.in);
         double total = 0;
-        // Ask the user the number of the students in the class
-        System.out.println("How many students are there in the class?");
-        // Save the user's input to variable 'studentNum'
-        int studentNum = input.nextInt();
-        // Create new array, involving student heights
-        int[] heights = new int[studentNum];
-        // Ask the user to enter the student heights
-        System.out.println("Enter the student heights in centimeters.");
+        // Ask the user the number of the people in the group
+        System.out.println("How many people are there in the group?");
+        // Save the user's input to variable 'peopleNum'
+        int peopleNum = input.nextInt();
+        // Create new array involving the heights of the members within the group
+        int[] heights = new int[peopleNum];
+        // Ask the user to enter the heights of all the members in centimeters
+        System.out.println("Enter the heights of all members in centimeters.");
         // For loop to go through array
         for (int i = 0; i < heights.length; i++) {
             heights[i] = input.nextInt();
             total = total + heights[i];
         }
 
-        // Calculate the total average height of the entire class
+        // Calculate the total average height 
         double avg = Math.round((total / heights.length) * 100) / 100;
-        // Output the class height average
-        System.out.println("The class height avarage is " + avg + "cm.");
-        // Print which students are above the class height average
-        System.out.println("The following number(s) are the students who are above the class height average.");
+        // Output the height average
+        System.out.println("The height average of this group is " + avg + "cm.");
+        // Print which members are above the height average
+        System.out.println("The following number(s) are the members who are above the group's height average.");
         // Find which height is above average by using for loop to go through the entire array
         for (int i = 0; i < heights.length; i++) {
             if (heights[i] > avg) {

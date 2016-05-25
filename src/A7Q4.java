@@ -39,7 +39,7 @@ public class A7Q4 {
             }
         }
         // Print the marks in order from lowest to highest using a for loop
-        System.out.println("Marks from lowest to hightest are: ");
+        System.out.println("The student marks from lowest to hightest are: ");
         for (int i = 0; i < 10; i++) {
             System.out.println(marks[i]);
         }
