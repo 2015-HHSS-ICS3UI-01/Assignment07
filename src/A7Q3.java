@@ -21,7 +21,7 @@ public class A7Q3 {
         int[] A = new int[2];
         // Ask the user to enter two integers
         System.out.println("Enter two integers.");
-        // Store the integers in the array using for loop
+        // For loop to go through the array
         for (int i = 0; i < 2; i++) {
             A[i] = input.nextInt();
         }
@@ -29,10 +29,10 @@ public class A7Q3 {
         if (A[1] > A[0]) {
             // If the statement above is true, the numbers have been entered in ascending order 
             // The program will then output space 0 first, then space 1
-            System.out.println("The integers in ascending order are: " + A[0] + "," + A[1] + ".");
+            System.out.println("The integers in ascending order are: " + A[0] + ", " + A[1] + ".");
         } else {
             // If the statement above is not true, the program will print the second digit first and then the first digit  
-            System.out.println("The integers in ascending order are: " + A[1] + "," + A[0] + ".");
+            System.out.println("The integers in ascending order are: " + A[1] + ", " + A[0] + ".");
         }
     }
 }

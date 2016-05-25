@@ -22,11 +22,11 @@ public class A7Q2 {
         System.out.println("How many people are there in the group?");
         // Save the user's input to variable 'peopleNum'
         int peopleNum = input.nextInt();
-        // Create new array involving the heights of the members within the group
+        // Create new array involving peopleNum, the number of members within the group
         int[] heights = new int[peopleNum];
-        // Ask the user to enter the heights of all the members in centimeters
+        // Ask the user to enter the heights of all the members in the group in centimeters
         System.out.println("Enter the heights of all members in centimeters.");
-        // For loop to go through array
+        // For loop to go through the array
         for (int i = 0; i < heights.length; i++) {
             heights[i] = input.nextInt();
             total = total + heights[i];
@@ -41,7 +41,7 @@ public class A7Q2 {
         // Find which height is above average by using for loop to go through the entire array
         for (int i = 0; i < heights.length; i++) {
             if (heights[i] > avg) {
-                // Print the numbers which are above average
+                // Print the numbers which are above the height average of the group
                 System.out.println(heights[i]);
             }
         }
