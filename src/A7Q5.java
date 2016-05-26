@@ -55,14 +55,14 @@ public class A7Q5 {
             // Calculates the median with even amount of marks
             int mid = marks.length / 2;
             int mid2 = mid - 1;
-            // WHY DOES IT PRINT OUT 1 AND 2 WHEN I INSERT 3 MARKS?!?
             double median = (marks[mid] + marks[mid2]) / 2;
             // Print the median
             System.out.println("The median of the student marks is " + median + ".");
         } else {
             // Calculates the median with odd amount of numbers
             int mid = marks.length / 2;
-            System.out.println("The median of the marks is " + mid + ".");
+            double median = marks[mid];
+            System.out.println("The median of the marks is " + median + ".");
         }
     }
 }
