@@ -23,12 +23,10 @@ public class A7Q3 {
         for(int i=0; i<2; i++){
             A[i]=input.nextInt();
         }
-        if(A[0]>A[1]){
-            A[1]=A[0];
-            A[0]=A[1];
-            
-        }
-            System.out.print("The integers in ascending order are: "+A[0]+" "+A[1]); 
+        if(A[0]<A[1]){
+          System.out.print("The integers in ascending order are: "+A[0]+" "+A[1]);   
+        }else
+            System.out.print("The integers in ascending order are: "+A[1]+" "+A[0]); 
         
     }
 }
